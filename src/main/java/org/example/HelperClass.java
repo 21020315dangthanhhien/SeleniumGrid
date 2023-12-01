@@ -12,7 +12,6 @@ public class HelperClass {
     public WebDriver initializeBrowser(String browserName) throws MalformedURLException {
         WebDriver driver;
         DesiredCapabilities dc = new DesiredCapabilities();
-        //ChromeOptions options = new ChromeOptions();
         if(browserName.equals("chrome")){
             dc.setBrowserName("chrome");
         }else if(browserName.equals("firefox")){
